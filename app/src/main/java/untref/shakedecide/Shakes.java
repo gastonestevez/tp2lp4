@@ -65,7 +65,7 @@ public class Shakes {
     private static List<String> getListaMoneda(){
         List<String> lista = new ArrayList<String>();
         lista.add("CARA");
-        lista.add("SECA");
+        lista.add("CECA");
         return lista;
     }
 
