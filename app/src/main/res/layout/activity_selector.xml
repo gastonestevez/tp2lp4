@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="untref.shakedecide.SelectorActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Elija una opción..."
+            android:id="@+id/textView4"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="NORMAL"
+            android:id="@+id/button2"
+            android:layout_gravity="center"
+            android:onClick="seleccionNormal" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="LETRAS"
+            android:id="@+id/button4"
+            android:layout_gravity="center"
+            android:onClick="seleccionLetras" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="NUMEROS (1-100)"
+            android:id="@+id/button5"
+            android:layout_gravity="center"
+            android:onClick="seleccionNumeros" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="MONEDA"
+            android:id="@+id/button6"
+            android:layout_gravity="center"
+            android:onClick="seleccionMoneda" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="DADO"
+            android:id="@+id/button7"
+            android:layout_gravity="center"
+            android:onClick="seleccionDado" />
+    </LinearLayout>
+</RelativeLayout>

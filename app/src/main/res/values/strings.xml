@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Let Shake Decide</string>
+    <string name="b_agregar">Agregar</string>
+    <string name="b_borrar">Borrar</string>
+    <string name="b_borrarTodo">Borrar Todo</string>
+    <string name="l_lista">Listado</string>
+    <string name="l_itemShake">Item Shake</string>
+    <string name="title_activity_shake">ShakeActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>
