@@ -15,18 +15,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/l_itemShake"
-                android:id="@+id/textView2"
-                android:layout_column="1"
-                android:layout_gravity="center_horizontal"
-                android:singleLine="false"
-                android:textStyle="bold"
-                android:typeface="normal"
-                android:layout_margin="8dp" />
         </TableRow>
 
         <TableRow>
@@ -49,7 +37,9 @@
                 android:text="@string/b_agregar"
                 android:id="@+id/button"
                 android:layout_column="1"
-                android:onClick="agregarItem" />
+                android:onClick="agregarItem"
+                android:elegantTextHeight="false"
+                android:textColor="#2913d1" />
 
         </TableRow>
         <TableRow>
@@ -59,7 +49,18 @@
                 android:text="@string/b_borrarTodo"
                 android:id="@+id/button3"
                 android:layout_column="1"
-                android:onClick="borrarTodosLosItems" />
+                android:onClick="borrarTodosLosItems"
+                android:textColor="#d51414" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_column="1" />
         </TableRow>
 
         <TableRow android:layout_gravity="center_horizontal"
@@ -84,7 +85,12 @@
                 android:id="@+id/list_items"
                 android:layout_column="1"
                 android:layout_gravity="center_horizontal"
-                android:clickable="true" />
+                android:clickable="true"
+                android:scrollingCache="false"
+                android:footerDividersEnabled="false"
+                android:stackFromBottom="false"
+                android:fastScrollEnabled="false"
+                android:drawSelectorOnTop="false" />
         </TableRow>
 
     </TableLayout>

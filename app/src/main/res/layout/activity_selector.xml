@@ -14,32 +14,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Elija una opción..."
-            android:id="@+id/textView4"
-            android:layout_gravity="center" />
+            android:text="Elija una opción ..."
+            android:id="@+id/textView4" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="NORMAL"
             android:id="@+id/button2"
-            android:layout_gravity="center"
-            android:onClick="seleccionNormal" />
+            android:onClick="seleccionNormal"
+            android:backgroundTint="#78b81a1a" />
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="LETRAS"
             android:id="@+id/button4"
-            android:layout_gravity="center"
-            android:onClick="seleccionLetras" />
+            android:onClick="seleccionLetras"
+            android:backgroundTint="#78a1191b" />
 
         <Button
             android:layout_width="fill_parent"
@@ -47,7 +59,8 @@
             android:text="NUMEROS (1-100)"
             android:id="@+id/button5"
             android:layout_gravity="center"
-            android:onClick="seleccionNumeros" />
+            android:onClick="seleccionNumeros"
+            android:backgroundTint="#787b141b" />
 
         <Button
             android:layout_width="fill_parent"
@@ -55,7 +68,8 @@
             android:text="MONEDA"
             android:id="@+id/button6"
             android:layout_gravity="center"
-            android:onClick="seleccionMoneda" />
+            android:onClick="seleccionMoneda"
+            android:backgroundTint="#795c0f10" />
 
         <Button
             android:layout_width="fill_parent"
@@ -63,6 +77,8 @@
             android:text="DADO"
             android:id="@+id/button7"
             android:layout_gravity="center"
-            android:onClick="seleccionDado" />
+            android:onClick="seleccionDado"
+            android:backgroundTint="#782b090b" />
+
     </LinearLayout>
 </RelativeLayout>
