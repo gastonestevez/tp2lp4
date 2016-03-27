@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }else{
             Toast.makeText(getApplicationContext(), "No hay items. Shake tampoco puede decidir.", Toast.LENGTH_SHORT).show();
-        }
+	    }
     }
 
     public String getRandomItemList() {
@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
             getListAdapter().add(palabra);
             getListAdapter().notifyDataSetChanged();
             getItemIngresado().setText("");
-            Toast.makeText(getApplicationContext(), "Se ha agregado un item a la lista.", Toast.LENGTH_SHORT).show();
-            try {
+                        Toast.makeText(getApplicationContext(), "Se ha agregado un item a la lista.", Toast.LENGTH_SHORT).show();
+	    try {
                 InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
             } catch (Exception e) {
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             getItemIngresado().setText("");
             Toast.makeText(getApplicationContext(),"Error! Item vacio o mayor a 20 caracteres.",Toast.LENGTH_SHORT).show();
-        }
+	}
     }
 
     public void setItemClickEvent() {
@@ -124,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
         getListaParaShake().clear();
         getListAdapter().clear();
         getListAdapter().notifyDataSetChanged();
-        Toast.makeText(getApplicationContext(), "Todos los item de la lista han sido borrados!", Toast.LENGTH_SHORT).show();
-    }
+        Toast.makeText(getApplicationContext(), "Todos los items de la lista han sido borrados!", Toast.LENGTH_SHORT).show();
+	}
 
 
     @Override

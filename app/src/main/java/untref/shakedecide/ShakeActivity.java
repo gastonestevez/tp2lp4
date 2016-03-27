@@ -20,7 +20,7 @@ public class ShakeActivity extends Activity {
         setContentView(R.layout.activity_shake);
 
         ((Vibrator)getSystemService(Context.VIBRATOR_SERVICE)).vibrate(500);
-        /**MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.coin);
+        final MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.coin);
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
@@ -28,19 +28,8 @@ public class ShakeActivity extends Activity {
                 mp.release();
             }
         });
+        mp.start();
 
-        CountDownTimer cntr_aCounter = new CountDownTimer(1100, 1000) {
-            public void onTick(long millisUntilFinished) {
-                mp.start();
-            }
-
-            @Override
-            public void onFinish() {
-                mp.stop();
-                mp.release();
-            }
-        }.start();
-**/
         Bundle extras = getIntent().getExtras();
 
         if(extras != null){
