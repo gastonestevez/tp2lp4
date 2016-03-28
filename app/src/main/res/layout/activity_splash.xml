@@ -7,17 +7,29 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="untref.shakedecide.SplashActivity"
-    android:background="#000000">
+    tools:context="untref.shakedecide.SplashActivity">
 
 
-         <ImageView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:id="@+id/i_splash"
-             android:layout_centerVertical="true"
-             android:layout_centerHorizontal="true"
-             android:src="@drawable/logo"
-             />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Elija una opcion y luego simplemente agite su celular para que shake puede decidir por usted."
+        android:id="@+id/textView2"
+        android:textSize="33dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="117dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FAST TIP"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
 </RelativeLayout>

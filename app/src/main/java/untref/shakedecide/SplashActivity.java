@@ -28,12 +28,8 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void startAnimations(){
-        ImageView iv = (ImageView) findViewById(R.id.i_splash);
         Animation anim = AnimationUtils.loadAnimation(this, R.anim.alpha);
         anim.reset();
-
-        iv.clearAnimation();
-        iv.startAnimation(anim);
     }
 
 }
